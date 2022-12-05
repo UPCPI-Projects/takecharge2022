@@ -53,6 +53,12 @@
           <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
           <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
           <li><a class="nav-link scrollto" href="#buy-tickets">Bible Games</a></li>
+          <li class="dropdown"><a href=""><span>Etc.</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a class="nav-link scrollto" href="#venue">Banner and Flag Sample</a></li>
+              <li><a class="nav-link scrollto" href="#gallery">T-shirt Design</a></li>
+            </ul>
+          </li> 
           <!-- <li><a class="nav-link scrollto" href="#venue">Venue</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -376,7 +382,7 @@
                 <h4>2ND NIGHT SERVICE</h4>
                 <p>
                   <li>MC : Pr. Melberth Masaglang</li>
-                  <li>Opening song : UPC Maa Youth Ministries Offering</li>
+                  <li>Opening song : UPC Maa Youth Ministries</li>
                   <li>Praise and Worship : UPC Ecoland Youth Ministries</li>
                   <li>Word of God : Pr. James Cambangay</li>
                 </p>
@@ -421,7 +427,7 @@
                 <h4>3RD DAY SERVICE</h4>
                 <p>
                   <li>MC : Pr. Jenas Matura</li>
-                  <li>Opening song : Tibungco Youth Ministries Offering</li>
+                  <li>Opening song : Tibungco Youth Ministries</li>
                   <li>Praise and Worship : Matina Youth Ministries</li>
                   <li>Word of God : Pr. James Cambangay</li>
                 </p>
@@ -458,7 +464,64 @@
 
     </section><!-- End Schedule Section -->
 
+    <!-- ======= Venue Section ======= -->
+    <section id="venue">
+      <div class="container-fluid" data-aos="fade-up">
 
+        <div class="section-header">
+          <h2>Banner and Flag Sample</h2>
+          <p>The dimensions for banner and flag are shown below as well</p>
+        </div>
+
+      </div>
+      <div class="container-fluid venue-gallery-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-0">
+
+          <div class="col-lg-6 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/venue-gallery/1.jpg" class="glightbox" data-gall="venue-gallery">
+                <img src="assets/img/venue-gallery/1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/venue-gallery/2.jpg" class="glightbox" data-gall="venue-gallery">
+                <img src="assets/img/venue-gallery/2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End Venue Section -->
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>T-shirt Design</h2>
+          <p>Check our gallery of t-shirt designs. Click <a class="text-uppercase text-center" href="https://drive.google.com/drive/u/0/folders/15tHDQNBAD6YtqkAiWI0wuB7cKdiauG7Q"><b>here</b></a> to download the logo.</p>
+        </div>
+      </div>
+
+      <div class="gallery-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide"><a href="assets/img/gallery/1.jpg" class="gallery-lightbox"><img src="assets/img/gallery/1.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/gallery/2.jpg" class="gallery-lightbox"><img src="assets/img/gallery/2.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/gallery/3.jpg" class="gallery-lightbox"><img src="assets/img/gallery/3.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/gallery/4.jpg" class="gallery-lightbox"><img src="assets/img/gallery/4.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/gallery/5.jpg" class="gallery-lightbox"><img src="assets/img/gallery/5.jpg" class="img-fluid" alt=""></a></div>
+          <!-- <div class="swiper-slide"><a href="assets/img/gallery/6.jpg" class="gallery-lightbox"><img src="assets/img/gallery/6.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/gallery/7.jpg" class="gallery-lightbox"><img src="assets/img/gallery/7.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="assets/img/gallery/8.jpg" class="gallery-lightbox"><img src="assets/img/gallery/8.jpg" class="img-fluid" alt=""></a></div> -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </section><!-- End Gallery Section -->
     <!-- =======  F.A.Q Section ======= -->
     <!-- <section id="faq">
 
@@ -1059,6 +1122,18 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    function downloadFile(fileDirectory, fileName) {
+      let link = document.createElement("a");
+      link.setAttribute("download",fileName)
+      link.href = fileDirectory;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    }
+     
+ </script>
 
 </body>
 
