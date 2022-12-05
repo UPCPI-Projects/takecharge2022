@@ -74,7 +74,9 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a class="buy-tickets scrollto" href="https://m.me/smdsection1youthministries">Register</a>
+      
+      <a class="buy-tickets scrollto" data-bs-toggle="modal" data-bs-target="#register-modal" data-ticket-type="standard-access" >Register</a>
+      <!-- <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#memory-modal" data-ticket-type="standard-access">View</button> -->
 
     </div>
   </header><!-- End Header -->
@@ -230,8 +232,10 @@
               <div class="col-md-2"><time>8am - 10:00am</time></div>
               <div class="col-md-10">
                 
-                <h4>OPENING CEREMONY <span>MC : Pr. Melberth Masaglang</span></h4><br/>
-                <h4>OPENING REMARKS <span>Pr. Jenas C. Matura</span></h4>
+                <h4>OPENING CEREMONY</h4>
+                <p>MC : Pr. Melberth Masaglang and Sis. Lady Mae Galupo</p><br/>
+                <h4>OPENING REMARKS</h4>
+                <p>Pr. Jenas C. Matura</p><br/>
                 <p>Parade of Participating Churches inside the venue followed by flag and banner relay. Cheers and yells per local Churches.</p>
               </div>
             </div>
@@ -950,6 +954,45 @@
         </div><!-- /.modal-dialog -->
       </div><!-- /.modal -->
 
+      <!-- Modal Order Form -->
+      <div id="register-modal" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h4 class="modal-title">Buy Tickets</h4> -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form method="POST" action="#">
+                <div class="card mb-5 mb-lg-0">
+                  <div class="card-body">
+                    <h5 class="card-title text-muted text-uppercase text-center">HOW TO</h5>
+                    <h6 class="card-price text-center">REGISTER</h6>
+                    <hr>
+                    <ul class="fa-ul">
+                      <p>1.) For online payments, kindly send to this gcash account : 0949 141 7127 (Eurel Bandoy)</p>
+                      <p>2.) After sending the payment, pm your proof of payment to sis. Eurel Bandoy <a href="https://m.me/eurelB">here</a></p>
+                      <p>
+                        <span class="fa-li"><i class="fa fa-check"></i>3.) Along with the proof of payment, indicate the following :</span><br/>
+                        <span class="fa-li"><i class="fa fa-check"></i> a.) Name of Church</span><br/>
+                        <span class="fa-li"><i class="fa fa-check"></i> b.) Name of Host Pastor</span><br/>
+                        <span class="fa-li"><i class="fa fa-check"></i> c.) List of delegates who paid and  the amount they paid</span><br/>
+                        <span class="fa-li"><i class="fa fa-check"></i> d.) Virtual Contest they joined (if applicable)</span>
+                      </p><br/>
+                      <p>For churches in Toril area, you may settle your pre-registration payment to Pastor Melberth Masaglang. Along with the payment, indicate the requirements mentioned above in step # 3.</p>
+                      <br/>
+                      <p>
+                        <span class="fa-li"><i class="fa fa-check"></i>IMPORTANT NOTE : </span><br/>
+                        <span class="fa-li"><i class="fa fa-check"></i>Deadline of early registration of contest participants will be December 10, 2022. Failure to pay on or before the said date shall forfeit the entries of the said delegates. For those delegates who are not participants of the virtual contest, payment can settled at the venue on December 19, 2022.</span>
+                      </p>
+                    </ul>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
     </section><!-- End Buy Ticket Section -->
 
   </main><!-- End #main -->
